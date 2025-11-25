@@ -106,6 +106,7 @@ class MainActivity : AppCompatActivity() {
             if (etFileName.toString().isNotEmpty()) {
                 when (selectedAction) {
                     ActionType.ENCRYPT -> {
+                        tvResult.text = "Пароль исчез..."
                         encryptFile(tvCurrentlyDisplayingFile.getText().toString(), dst)
                     }
 
